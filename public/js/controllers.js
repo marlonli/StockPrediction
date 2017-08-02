@@ -55,7 +55,7 @@ app.controller('mainController', function ($scope, $interval, $http) {
         }, function(error) {
             console.log(error);
         });
-    }, 20000);
+    },50000);
 
 });
 
@@ -682,10 +682,6 @@ app.controller('preController', function ($scope, $http) {
         {
             name: 'Lasso/Ridge',
             value: ''
-        },
-        {
-            name: 'Bayesian Curve Fitting',
-            value: 'Bayes'
         }
     ];
     $scope.inputStockName = $scope.stocks[0];
